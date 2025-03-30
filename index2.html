@@ -310,17 +310,17 @@
                     createTimelineEvent(event, index);
                 });
 
-                // After all animations, show the "More?" button
+                
                 setTimeout(() => {
                     document.getElementById('more-btn').style.display = 'block';
-                }, (heartPoints.length * 40) + (timelineEvents.length * 800)); // Delay to ensure all animations finish
+                }, (heartPoints.length * 40) + (timelineEvents.length * 800)); 
             }, heartPoints.length * 40);
 
             createFloatingHearts();
 
-            // Event listener for the "More?" button click
+            
             document.getElementById('more-btn').addEventListener('click', () => {
-                window.location.href = 'index3.html'; // Replace with the actual HTML file you want to navigate to
+                window.location.href = 'index3.html';
             });
         });
     </script>
